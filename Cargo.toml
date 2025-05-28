@@ -1,0 +1,17 @@
+[package]
+name = "jpid"
+version = "1.0.0-250319"
+homepage = "https://github.com/g1eng/jpid-rs"
+repository = "https://github.com/g1eng/jpid-rs"
+documentation = "https://github.com/g1eng/jpid-rs"
+description = "日本郵便の提供するAPIを利用するためのSDKです。"
+license = "MIT OR Apache-2.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "^1.0", features = ["derive"] }
+serde_with = { version = "^3.8", default-features = false, features = ["base64", "std", "macros"] }
+serde_json = "^1.0"
+serde_repr = "^0.1"
+url = "^2.5"
+reqwest = { version = "^0.12", default-features = false, features = ["json", "multipart"] }
